@@ -27,7 +27,7 @@ const Navbar = () => {
         try {
             const token = localStorage.getItem("token");
             if(token) {
-                navigate("listings/new");
+                navigate("/listings/new");
             } else {
                 navigate("/signin");
             }

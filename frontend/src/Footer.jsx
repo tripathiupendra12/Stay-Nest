@@ -33,21 +33,21 @@ const Footer = () => {
 
                 {/* Footer Links */}
                 <div className="flex justify-center items-center gap-6 text-sm text-gray-700 mb-6">
-                    <a
-                        href="/privacy-policy"
+                    <Link
+                        to="/privacy-policy"
                         className="hover:text-blue-700 transition-colors duration-300"
                     >
                         Privacy Policy
-                    </a>
+                    </Link>
 
                     <span className="text-gray-400">|</span>
 
-                    <a
-                        href="/terms-and-conditions"
+                    <Link
+                        to="/terms-and-conditions"
                         className="hover:text-blue-700 transition-colors duration-300"
                     >
                         Terms & Conditions
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Copyright */}
@@ -63,28 +63,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-// import { FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
-
-// const Footer = () => {
-//     return (
-        
-//             <div className="w-full h-max px-12 py-12 bg-gray-300 border-t-2 border-gray-400 text-center">
-//                 <div className="flex justify-center gap-6">
-//                     <span className="hover:text-blue-700"><InstagramIcon /></span>
-//                     <span className="hover:text-blue-700"><LinkedinIcon /></span>
-//                     <span className="hover:text-blue-700"><FacebookIcon /></span>
-//                 </div>
-//                 <div className="text-sm text-gray-800 py-4">
-//                     <p>&copy; Stay Next Private Limited</p>
-//                 </div>
-//                 <div className="text-sm text-gray-800 hover:text-blue-700">
-//                     <a href="/privacy">Privacy</a>
-//                     <a href="/terms">Terms</a>
-//                 </div>
-//             </div>
-//     )
-// }
-
-// export default Footer;
