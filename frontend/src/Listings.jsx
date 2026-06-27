@@ -8,10 +8,10 @@ const Listings = ({ selectedCategory }) => {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        let url = "http://localhost:8080/listings/listings";
+        let url = "https://stay-nest-ph9a.onrender.com/listings/listings";
 
         if(selectedCategory !== "All") {
-            url = `http://localhost:8080/listings/listings/category/${selectedCategory}`;
+            url = `https://stay-nest-ph9a.onrender.com/listings/listings/category/${selectedCategory}`;
         }
             const res = axios.get(url)
                 .then((res) => {

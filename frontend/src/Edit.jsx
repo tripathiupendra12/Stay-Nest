@@ -13,7 +13,7 @@ const Edit = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/listings/${id}/edit`)
+      .get(`https://stay-nest-ph9a.onrender.com/listings/${id}/edit`)
       .then((res) => {
         setFormData(res.data);
       })
@@ -85,7 +85,7 @@ const Edit = () => {
         }
 
         const res = await axios.put(
-          `http://localhost:8080/listings/${id}`,
+          `https://stay-nest-ph9a.onrender.com/listings/${id}`,
           data,
           {
             headers: {

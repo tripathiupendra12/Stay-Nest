@@ -21,7 +21,7 @@ const Show = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8080/listings/${id}`)
+      .get(`https://stay-nest-ph9a.onrender.com/listings/${id}`)
       .then((res) => {
         setListing(res.data);
         const token = localStorage.getItem("token");
@@ -36,7 +36,7 @@ const Show = () => {
     const token = localStorage.getItem("token");
     if (token) {
       try {
-        const res = await axios.delete(`http://localhost:8080/listings/${id}`);
+        const res = await axios.delete(`https://stay-nest-ph9a.onrender.com/listings/${id}`);
         toast.success(res.data.message);
         navigate("/listings");
       } catch (err) {
@@ -78,7 +78,7 @@ const Show = () => {
 
     try {
       const res = await axios.post(
-        `http://localhost:8080/listings/${id}/reviews`,
+        `https://stay-nest-ph9a.onrender.com/listings/${id}/reviews`,
         reviewData,
       );
       toast.success(res.data.message);
@@ -91,7 +91,7 @@ const Show = () => {
   const deleteReview = async (reviewId) => {
     try {
       const res = await axios.delete(
-        `http://localhost:8080/listings/${id}/reviews/${reviewId}`,
+        `https://stay-nest-ph9a.onrender.com/listings/${id}/reviews/${reviewId}`,
       );
       toast.success(res.data.message);
       navigate(0);

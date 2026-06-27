@@ -24,7 +24,7 @@ const Signup = () => {
     e.preventDefault();
 
     await axios
-      .post("http://localhost:8080/signup", user)
+      .post("https://stay-nest-ph9a.onrender.com/signup", user)
       .then((res) => {
         if (res.data.success) {
           localStorage.setItem("token", res.data.token);

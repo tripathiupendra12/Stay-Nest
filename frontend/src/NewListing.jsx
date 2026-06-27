@@ -82,7 +82,7 @@ const NewListing = () => {
         data.append("category", formData.category);
         data.append("image", formData.image);
 
-        await axios.post("http://localhost:8080/listings",
+        await axios.post("https://stay-nest-ph9a.onrender.com/listings",
             data,
             {
                 headers: {

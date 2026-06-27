@@ -12,7 +12,7 @@ const Chatbot = ({ setIsOpen }) => {
 
     setMessage("");
 
-    const res = await fetch("http://localhost:8080/chat", {
+    const res = await fetch("https://stay-nest-ph9a.onrender.com/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
