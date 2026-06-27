@@ -32,7 +32,6 @@ const Signin = () => {
       }
       navigate("/listings/listings/category/All");
       toast.success(res.data.message);
-      window.location.reload();
     } catch (err) {
       toast.error(err.data);
       navigate("/signin");
