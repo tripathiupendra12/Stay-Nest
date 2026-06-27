@@ -50,7 +50,7 @@ const Signup = () => {
     <section class="bg-gray-50 dark:bg-gray-50">
       <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
         <Link
-          href="/listings/listings/category/All"
+          to="/listings/listings/category/All"
           class="flex items-center mb-6 text-2xl font-semibold text-gray-800"
         >
           <img class="w-16 h-12 mr-2" src="/logo2.png" alt="logo" />
@@ -143,7 +143,7 @@ const Signup = () => {
               <p class="text-sm font-light text-gray-500 dark:text-gray-400">
                 If you have already an account{" "}
                 <Link
-                  href="/signin"
+                  to="/signin"
                   class="font-medium text-primary-600 hover:underline dark:text-primary-500"
                 >
                   Sign in

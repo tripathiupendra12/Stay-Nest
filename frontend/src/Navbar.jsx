@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LogIn, LogOut } from 'lucide-react';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -44,13 +45,13 @@ const Navbar = () => {
 
         {/* Logo */}
         <div className="flex-shrink-0">
-          <a href="/listings/listings/category/All">
+          <Link to="/listings/listings/category/All">
             <img
               src="/logo (2).png"
               alt="Logo"
               className="w-16 sm:w-20 hover:scale-105 transition duration-300"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Center Search */}
@@ -142,8 +143,8 @@ const Navbar = () => {
               Logout
             </button>
           ) : (
-            <a
-              href="/signin"
+            <Link
+              to="/signin"
               className="
                 font-medium
                 text-gray-900
@@ -155,7 +156,7 @@ const Navbar = () => {
             >
               <LogIn className="h-8 w-10 pr-2 mt-4"/>
               Login
-            </a>
+            </Link>
           )}
         </div>
 
