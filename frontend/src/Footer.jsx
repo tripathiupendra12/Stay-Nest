@@ -46,7 +46,7 @@ const Footer = () => {
                         to="/terms-and-conditions"
                         className="hover:text-blue-700 transition-colors duration-300"
                     >
-                        Terms & Conditions
+                        <p>Terms & Conditions</p>
                     </Link>
                 </div>
 
