@@ -1,5 +1,5 @@
 import { FacebookIcon, InstagramIcon, LinkedinIcon } from "lucide-react";
-import { Link } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
