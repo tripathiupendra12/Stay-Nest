@@ -5,7 +5,7 @@ import Edit from "./Edit";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import NotFound from "./NotFound";
-import Signup from "./signup";
+import Signup from "./Signup";
 import Signin from "./Signin";
 import PrivacyPolicy from "./PrivacyPolicy";
 import TermsAndConditions from "./TermsAndConditions";
