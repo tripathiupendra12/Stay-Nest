@@ -21,7 +21,6 @@ const Navbar = () => {
         axios.defaults.headers.common["Authorization"];
         setIsLoggedIn(false);
         navigate("/signin");
-        window.location.reload();
     };
 
     const handleNewListing = async () => {
