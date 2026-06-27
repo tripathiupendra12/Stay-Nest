@@ -7,5 +7,5 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss(),
   ],
-  base: "/listings/listings/category/All"
-})
+  base: "/"
+});

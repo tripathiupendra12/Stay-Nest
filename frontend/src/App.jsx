@@ -20,6 +20,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CategoryNav from "./CategoryNav";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
     </>
       <Routes>
         <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Navigate to="/listings/listings/category/All" replace/>}></Route>
         <Route path="/listings/listings/category/:category" element={<Listings selectedCategory={selectedCategory}/>}/>
         <Route path="/listings/:id" element={<Show />}/>
         <Route path="/listings/new" element={<NewListing />}/>
