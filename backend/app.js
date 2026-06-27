@@ -43,6 +43,10 @@ const sessionOptions = {
 
 app.use(session(sessionOptions));
 
+app.get("/", (req, res) => {
+    res.send("Backend is running");
+})
+
 app.use("/listings", listingRouter);
 app.use((err, req, res, next) => {
     if(err.code === "LIMIT_FILE_SIZE") {
