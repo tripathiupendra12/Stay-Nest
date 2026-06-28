@@ -82,8 +82,8 @@ const Show = () => {
         `https://stay-nest-ph9a.onrender.com/listings/${id}/reviews`,
         reviewData,
       );
-      navigate(0);
       toast.success(res.data.message);
+      navigate(0);
     } catch (err) {
       setErr(err.message);
     }
@@ -94,8 +94,8 @@ const Show = () => {
       const res = await axios.delete(
         `https://stay-nest-ph9a.onrender.com/listings/${id}/reviews/${reviewId}`,
       );
-      navigate(0);
       toast.success(res.data.message);
+      navigate(0);
     } catch (err) {
       setErrors(err.message);
     }
