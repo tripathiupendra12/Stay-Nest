@@ -92,7 +92,7 @@ const NewListing = () => {
             }
             ).then((res) => {
                 toast.success(res.data.message);
-                navigate("/listings");
+                navigate("/listings/listings/category/All");
             }).catch((err) => {
                 setErr(err.data.message);
             })
