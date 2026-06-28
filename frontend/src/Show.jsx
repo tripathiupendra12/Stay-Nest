@@ -82,7 +82,6 @@ const Show = () => {
         reviewData,
       );
       toast.success(res.data.message);
-      navigate(`/listings/${id}`);
     } catch (err) {
       setErr(err.message);
     }
@@ -94,7 +93,6 @@ const Show = () => {
         `https://stay-nest-ph9a.onrender.com/listings/${id}/reviews/${reviewId}`,
       );
       toast.success(res.data.message);
-      navigate(`/listings/${id}`);
     } catch (err) {
       setErrors(err.message);
     }
