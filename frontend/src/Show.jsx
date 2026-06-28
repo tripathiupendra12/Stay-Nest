@@ -38,7 +38,7 @@ const Show = () => {
       try {
         const res = await axios.delete(`https://stay-nest-ph9a.onrender.com/listings/${id}`);
         toast.success(res.data.message);
-        navigate("/listings");
+        navigate("/listings/listings/category/All");
       } catch (err) {
         setErrors(err.message);
       }
@@ -82,7 +82,7 @@ const Show = () => {
         reviewData,
       );
       toast.success(res.data.message);
-      navigate(0);
+      navigate(`/listings/${id}`);
     } catch (err) {
       setErr(err.message);
     }
@@ -94,7 +94,7 @@ const Show = () => {
         `https://stay-nest-ph9a.onrender.com/listings/${id}/reviews/${reviewId}`,
       );
       toast.success(res.data.message);
-      navigate(0);
+      navigate(`/listings/${id}`);
     } catch (err) {
       setErrors(err.message);
     }
