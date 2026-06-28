@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams, Link, useNavigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import ErrorPage from "./ErrorPage";
 import { toast } from "react-toastify";
 import { jwtDecode } from "jwt-decode";
 import ListingMap from "./ListingMap";
+import { useNavigate } from "react-router-dom";
 
 const Show = () => {
   const [listing, setListing] = useState([]);
@@ -81,6 +82,7 @@ const Show = () => {
         `https://stay-nest-ph9a.onrender.com/listings/${id}/reviews`,
         reviewData,
       );
+      navigate(0);
       toast.success(res.data.message);
     } catch (err) {
       setErr(err.message);
@@ -92,6 +94,7 @@ const Show = () => {
       const res = await axios.delete(
         `https://stay-nest-ph9a.onrender.com/listings/${id}/reviews/${reviewId}`,
       );
+      navigate(0);
       toast.success(res.data.message);
     } catch (err) {
       setErrors(err.message);
