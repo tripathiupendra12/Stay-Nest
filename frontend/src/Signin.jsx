@@ -30,8 +30,8 @@ const Signin = () => {
         localStorage.setItem("token", res.data.token);
         axios.defaults.headers.common["Authorization"] = "Bearer " + res.data.token;
       }
-      navigate("/listings/listings/category/All");
       window.location.reload();
+      navigate("/listings/listings/category/All");
       toast.success(res.data.message);
     } catch (err) {
       toast.error(err.data);
