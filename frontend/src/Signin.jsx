@@ -31,6 +31,7 @@ const Signin = () => {
         axios.defaults.headers.common["Authorization"] = "Bearer " + res.data.token;
       }
       navigate("/listings/listings/category/All");
+      window.location.reload();
       toast.success(res.data.message);
     } catch (err) {
       toast.error(err.data);
